@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        orders-in-expensive:
+          destination: order1
+          contentType: application/json
+        orders-out-expensive:
+          destination: order1
+          contentType: application/json
+        orders-in-notExpensive:
+          destination: order2
+          contentType: application/json
+        orders-out-notExpensive:
+          destination: order2
+          contentType: application/json
+logging:
+  level:
+    org.apache.kafka.clients.producer: FATAL
+server: 
+  port: 8081
