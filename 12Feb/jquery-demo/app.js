@@ -1,9 +1,9 @@
 //Caching the DOM element(anonymous function)
 $(function () {
     var button=$('#btn');
-    button.on('click',disable);//similar to onclick in html
+    button.on('click',generateTags);//similar to onclick in html
     var jqelement = $('#firstName');
-
+    var age=$('#age');
     function save(event) {
         console.log(event);
         //Jquery Way
@@ -22,5 +22,14 @@ $(function () {
     //Toggling text field clickable state
     function disable() {
         $('#firstName').attr("disabled", !($('#firstName').attr("disabled")));
+    }
+
+    //Generating new li tags
+    function generateTags(){
+        var row=$('<li>');//similar to document.createElement('li');
+        var gender=$("[name='gender']:checked");
+        row.html(jqelement.val()+","+age.val()+","+gender.val());
+        var users=$('#users');
+        users.append(row);
     }
 });
