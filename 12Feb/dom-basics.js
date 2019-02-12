@@ -1,5 +1,5 @@
 //Event handler for button click
-function save(event) {
+/*function save(event) {
     //var name = document.getElementById("name");
     //var nameDomElement=document.getElementsByTagName('input')[0];
     var nameDomElement=document.getElementsByName('firstName')[0];
@@ -12,4 +12,10 @@ function save(event) {
 }
 function foo() {
     console.log('div click handler');
-}
+}*/
+
+//Toggling text field clickable state
+/*function disable(){
+    document.getElementById('name').disabled=!(document.getElementById('name').disabled);
+}*/
+
