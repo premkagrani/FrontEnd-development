@@ -1,4 +1,4 @@
-//inner functions
+//Inner functions
 function outer() {
     var company='sapient';//variable
     this.company='IBM';//property
