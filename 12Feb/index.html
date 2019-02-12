@@ -5,8 +5,10 @@
 </head>
 
 <body>
-    <input id="name" style="background-color: rgb(116, 221, 147)" />
-    <input type="button" value="Click" onclick="save()" />
+    <div onclick="foo()">
+        <input id="name" name="firstName" style="background-color: rgb(116, 221, 147)" />
+        <input id="name" type="button" name="firstName" value="Click" onclick="save(event)" />
+    </div>
 
 </body>
 
