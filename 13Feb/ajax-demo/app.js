@@ -40,6 +40,4 @@ $(function () {
         row.append(deleteBtn);
         users.append(row);
     }
-
-    //deleting a record
 }); 
