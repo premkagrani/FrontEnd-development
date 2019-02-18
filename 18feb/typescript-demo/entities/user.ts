@@ -1,4 +1,4 @@
-export default class User{
+export class User{
     name:String;
     age:number;
     constructor(name:String,age:number){
@@ -13,4 +13,8 @@ export default class User{
     private sleep(){
         console.log(this.name+' is sleeping');
     }
+}
+
+export class Address{
+
 }

@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var User = /** @class */ (function () {
     function User(name, age) {
         this.name = name;
@@ -15,4 +15,10 @@ var User = /** @class */ (function () {
     };
     return User;
 }());
-exports.default = User;
+exports.User = User;
+var Address = /** @class */ (function () {
+    function Address() {
+    }
+    return Address;
+}());
+exports.Address = Address;

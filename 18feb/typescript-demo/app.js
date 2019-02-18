@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 console.log("It works!");
 /*var age:number;
 age=10;
@@ -19,7 +19,7 @@ let user={
 user={name:'Ajay',
 age:23};*/
 // -------classes--------
-var user_1 = require("./user");
+var user_1 = require("./entities/user");
 /*class User{
     name:String;
     age:number;
@@ -43,7 +43,7 @@ u1.walk();*/
 function generateUsers() {
     var users = [];
     for (var count = 0; count < 10; count++) {
-        var user = new user_1.default('User' + count, 10 - count);
+        var user = new user_1.User('User' + count, 10 - count);
         users.push(user);
     }
     return users;
