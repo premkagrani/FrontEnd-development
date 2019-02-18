@@ -19,7 +19,7 @@ user={name:'Ajay',
 age:23};*/
 
 // -------classes--------
-import {User,Address} from './entities/user';
+import {User} from './entities/user';
 /*class User{
     name:String;
     age:number;
