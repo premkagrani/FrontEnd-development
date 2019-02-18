@@ -1,0 +1,41 @@
+<html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<head>
+    <script>
+        $(function () {
+            // Arrow Function
+            var foo = () => {
+
+            }
+            var evens = [4, 8, 2];
+            // evens.sort(function(a,b){
+            //     return a-b;
+            // });
+            //Callback using arrow functions
+            // evens.sort((a,b)=>{
+            //     return a-b;
+            // });
+            // ----------------------
+            //Shorthand for one line of code
+            //evens.sort((a,b)=>a-b);
+            evens.filter((value, index) => value % 2);
+        });
+    </script>
+    <script>
+        $(() => {
+            function User1(firstName) {
+                this.fName = firstName;
+            }
+            var u1 = new User1('Prem');
+            var u2 = new User1('Prem');
+            u1.fName = "Ajay";
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
