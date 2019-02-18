@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var User = /** @class */ (function () {
+    function User(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    User.prototype.walk = function () {
+        console.log(this.name + ' is walking');
+        this.sleep();
+        return this.name;
+    };
+    User.prototype.sleep = function () {
+        console.log(this.name + ' is sleeping');
+    };
+    return User;
+}());
+exports.default = User;
