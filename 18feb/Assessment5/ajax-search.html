@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="ajax-search.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Order Search</title>
+</head>
+<body>
+    <div class="form-group">
+        <p><strong>Search</strong></p>
+        <input id="searchKey" class="form-control" />
+        <button class="btn btn-primary form-control" id="search" onclick="getOrder()">Search</button>
+        <ol id="orders"></ol>
+    </div>
+</body>
+</html>

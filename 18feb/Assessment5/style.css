@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    margin:40px;
+    font-weight: 600;
+}
+
+#cardName,#cardNumber
+{
+    width:32%;
+}
+
+
+#CVV,#Expiry{
+    margin-right:115px;
+    display:inline-block;
+}
+
+#cardExpiryMonth,#cardExpiryYear,#cardCVV{
+    display: inline-block;
+    margin-right:29px;
+    width:9%;
+}
+
+p{
+    padding-top:10px;
+}
+
+#pay,#totalAmount{
+    display: block;
+    margin-top: 10px;
+    width:32%;
+}
+
+#searchKey,#search{
+    width:30%;
+    margin-top: 10px;
+}
